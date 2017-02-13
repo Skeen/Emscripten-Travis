@@ -6,7 +6,7 @@ sudo: required
 install: ./cmake.sh
 
 before_script: ./emscripten_before.sh
-script: ./emscripten_before.sh
+script: ./emscripten.sh
 after_script: ./emscripten_after.sh
 
 cache:

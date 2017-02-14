@@ -5,9 +5,7 @@ sudo: required
 
 install: ./cmake.sh
 
-before_script: timeout 30m ./emscripten.sh || true
-script: timeout 30m ./emscripten.sh || true
-after_script: timeout 30m ./emscripten.sh || true
+script: ./emscripten.sh
 
 cache:
     directories:
